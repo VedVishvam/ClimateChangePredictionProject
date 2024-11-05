@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression # Load scikit learn for the Li
 from sklearn.model_selection import train_test_split
 
 # Preprocess the data
-df = pd.read_csv('data2.csv')    # Load the data.csv
+df = pd.read_csv('~/Code/ClimateChange_Prediction/data2.csv')    # Load the data.csv
 df = df.drop(["J-D", "D-N", "DJF", "MAM", "JJA", "SON"], axis=1)
 df = df.ffill()
 df.set_index('Year', inplace=True)
@@ -47,6 +47,10 @@ for i in columns:
     plt.xlabel('Year')
     plt.ylabel('Temperature (°C)')
     plt.legend()
-    plt.show()
+    #plt.show()
 
-    # Un comment this line of code if you want all the graphs on your computer. : plt.savefig(f"predictions_{i}.png")
+    # Un comment this line of code if you want all the graphs on your computer. : 
+    plt.savefig(f"{i}.png")
+
+    # Clear the plt for the next figure
+    plt.clf()
