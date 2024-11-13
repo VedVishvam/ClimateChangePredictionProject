@@ -6,12 +6,10 @@ The Dataset is from NASA Goddard Space Flight Center Sciences and Exploration.
 Source : GISTEMP Team, 2024: GISS Surface Temperature Analysis (GISTEMP), version 4. NASA Goddard Institute for Space Studies. Dataset accessed 20YY-MM-DD at https://data.giss.nasa.gov/gistemp/.
 
 # Explanation
-So what this climate change prediction system does is it predicts the change of weather in that month. So it will predict the future weather change. 
+This climate change prediction system forecasts future weather.  It uses historical data to predict future weather, by analyzing trends and patterns in the historical dataset. 
 
-How the model works is it uses historical data to predict the future average temperature change. It finds the best line of fit and the pattern in the data and uses those to factors to predict.
+The process involves by splitting the data into a training set and a testing set by doing this essential process it ensures that the model will have good accuracy when using new and improved data.
 
-So how this system works is you feed your dataset which is split into a training dataset and a testing dataset, because if you just use one you can’t full train it. 
+After splitting the datasets, the model analyzes trends and patterns and creates a best line of fit. Using this best line of fit it can predict the future weather. 
 
-So if later on we want to use a more improved dataset we can, and if we didn’t train it with a split dataset it won’t produce good accuracy. 
-
-So we have to train the model to be accurate, so first we feed the training dataset set which contains 80% of the main dataset. Then you have to test the model with the testing dataset. So know you can see the real accuracy because the model wasn’t trained with this so this is completely new for it. 
+Keep in mind that future weather is not solely based on historical weather patterns and trends, instead it is based on multiple factors that affect the future weather.
