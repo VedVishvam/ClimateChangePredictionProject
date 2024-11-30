@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 import time
 
 # Preprocess the data
-df = pd.read_csv('~/Code/ClimateChange_Prediction/data2.csv')    # Load the data.csv
+df = pd.read_csv('~/Code/ClimateChangePredictionProject/data2.csv')    # Load the data.csv
 df = df.drop(["J-D", "D-N", "DJF", "MAM", "JJA", "SON"], axis=1)
 df = df.ffill()
 df.set_index('Year', inplace=True)
