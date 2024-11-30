@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt                   # Load Matplotlib for graphyin
 import copy                                       # Load copy for deep copying data
 from sklearn.linear_model import LinearRegression # Load scikit learn for the Linear Regression model
 from sklearn.model_selection import train_test_split
+import time
 
 # Preprocess the data
 df = pd.read_csv('~/Code/ClimateChange_Prediction/data2.csv')    # Load the data.csv
@@ -54,3 +55,5 @@ for i in columns:
 
     # Clear the plt for the next figure
     plt.clf()
+    time.sleep(0.2)
+    plt.close()
